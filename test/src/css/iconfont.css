@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('../asset/iconfont.ttf?t=1632988801158') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-info:before {
+  content: "\e699";
+}
+
+.icon-birdxiaoniao:before {
+  content: "\e736";
+}
+
+.icon-facebook:before {
+  content: "\e676";
+}
+
+.icon-webpack:before {
+  content: "\e65b";
+}
+
+.icon-behance:before {
+  content: "\e87a";
+}
+
+.icon-googleplus:before {
+  content: "\e87b";
+}
+
+.icon-github:before {
+  content: "\e732";
+}
+
+.icon-basketball:before {
+  content: "\e625";
+}
+

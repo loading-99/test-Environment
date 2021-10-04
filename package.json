@@ -1,0 +1,57 @@
+{
+  "name": "test_webpack",
+  "version": "1.0.0",
+  "description": "github project forked",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "DOM": "0.0.3",
+    "babel-loader": "^8.2.2",
+    "corejs": "^1.0.0",
+    "css-loader": "^6.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.24.2",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "jquery": "^3.6.0",
+    "mini-css-extract-plugin": "^2.3.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.54.0",
+    "webpack-dev-server": "^4.3.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.8.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "globals": {
+      "localStorage": true,
+      "window": true,
+      "document": true
+    }
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  }
+}
