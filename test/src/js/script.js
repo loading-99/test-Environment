@@ -1,9 +1,24 @@
-import $ from 'jquery';
+// import $ from 'jquery';
+const $cont = document.querySelector('.cont');
+const $elsArr = [].slice.call(document.querySelectorAll('.el'));
+const $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
 
-document.querySelector('body');
+setTimeout(() => {
+  $cont.classList.remove('s--inactive');
+}, 200);
 
-$(document).ready(() => {
-  $('.trigger').click(() => {
-    $('.menu').toggleClass('active');
+$elsArr.forEach(($el) => {
+  $el.addEventListener('click', function () {
+    if (this.classList.contains('s--active')) return;
+    $cont.classList.add('s--el-active');
+    this.classList.add('s--active');
+  });
+});
+
+$closeBtnsArr.forEach(($btn) => {
+  $btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    $cont.classList.remove('s--el-active');
+    document.querySelector('.el.s--active').classList.remove('s--active');
   });
 });

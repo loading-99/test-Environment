@@ -85,22 +85,22 @@ module.exports = {
                     [
                         {
                             test: /\.css$/i,
-                            use: ["MiniCssExtractPlugin.loader", "css-loader",
-                                {
-                                    loader: 'postcss-loader',
-                                    options: {
-                                        postcssOptions: {
-                                            plugins: [
-                                                [
-                                                    'postcss-preset-env',
-                                                    {
-                                                        // 其他选项
-                                                    },
-                                                ],
+                            use: [MiniCssExtractPlugin.loader, "css-loader",
+                            {
+                                loader: 'postcss-loader',
+                                options: {
+                                    postcssOptions: {
+                                        plugins: [
+                                            [
+                                                'postcss-preset-env',
+                                                {
+                                                    // 其他选项
+                                                },
                                             ],
-                                        },
+                                        ],
                                     },
                                 },
+                            },
                             ],
                         },
                         {
@@ -197,10 +197,10 @@ module.exports = {
     mode: 'development',
     devServer: {
         static: {
-            directory: path.join(__dirname, 'public'),
+            directory: path.join(__dirname, 'dist'),
         },
         compress: true,
-        port: 9000,
+        port: 3000,
     },
 
 }
