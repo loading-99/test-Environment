@@ -1,0 +1,181 @@
+// 去掉表格单元格边框
+.customer-table th {
+    border: none;
+}
+
+.customer-table td,
+.customer-table th.is-leaf {
+    border: none;
+}
+
+.el-table {
+    color: var(--text-color);
+}
+
+// 表格最外边框
+.el-table--border,
+.el-table--group {
+    border: none;
+}
+
+// 头部边框
+.customer-table thead tr th.is-leaf {
+    border: 0;
+    border-right: none;
+}
+
+.customer-table thead tr th:nth-last-of-type(2) {
+    border-right: 0
+}
+
+// 表格最外层边框-底部边框
+.el-table--border::after,
+.el-table--group::after {
+    width: 0;
+}
+
+.customer-table::before {
+    width: 0;
+}
+
+.customer-table .el-table__fixed-right::before,
+.el-table__fixed::before {
+    width: 0;
+}
+
+// 表格有滚动时表格头边框
+.el-table--border th.gutter:last-of-type {
+    border: 1px solid #EBEEF5;
+    border-left: none;
+}
+
+.el-table th,
+.el-table tr {
+    background: var(--main-color);
+}
+
+// .el-table--enable-row-hover .el-table__body tr:hover>td {
+//     background: var(--active-color);
+// }
+.el-table tr:hover {
+    background: var(--active-color);
+}
+
+.customer-table table tbody tr td {
+    height: 80px;
+    padding: 5px 0;
+}
+
+.customer-table .cell .el-image {
+    width: 70px;
+    height: 70px;
+}
+
+.customer-table .cell .el-image img {
+    width: 100%;
+    height: 100%;
+}
+
+// 播放器 声音
+.voice .block .el-slider__runway {
+    height: 3px;
+}
+
+.voice .block .el-slider__runway .el-slider__bar {
+    height: 3px;
+    background-color: #b82525;
+}
+
+.voice .block .el-slider__runway .el-tooltip {
+    background-color: #C62F2F;
+    width: 14px;
+    height: 14px;
+    border: none;
+}
+
+.block .el-slider__runway .el-slider__button-wrapper {
+    top: -16px;
+}
+
+.el-tooltip__popper.is-dark.volume-tooltip {
+    z-index: 3333 !important;
+}
+
+.el-tabs__item.is-active {
+    color: #C62F2F;
+    font-weight: bold;
+}
+
+.el-tabs__item:hover {
+    color: #C62F2F;
+}
+
+.el-tabs__active-bar {
+    background-color: #C62F2F;
+}
+
+.el-tabs__item {
+    font-size: 16px;
+    color: var(--title-color);
+}
+
+.loadingname {
+    .el-loading-spinner {
+        i {
+            color: #C62F2F;
+        }
+        p {
+            color: #C62F2F;
+        }
+    }
+}
+
+.loginClass {
+    background-color: #fffbfb;
+    width: 380px;
+    .el-message-box__content {
+        display: flex;
+        flex-direction: column-reverse;
+        .el-message-box__container {
+            position: none;
+            .el-message-box__message {
+                p {
+                    a {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+    .el-message-box__btns {
+        text-align: center;
+        margin: 10px 0;
+        .el-button--primary {
+            background-color: #C62F2F;
+            display: inline-block;
+            width: 80%;
+            border: none;
+            padding: 13px 0;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .el-message-box__input {
+        .el-input {
+            .el-input__inner {
+                background: rgb(240, 238, 238);
+                outline: none;
+                border: none;
+            }
+            input[type=number] {
+                -moz-appearance: textfield;
+            }
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+    }
+}
