@@ -60,6 +60,7 @@
         </div>
       </div>
     </el-header>
+
     <el-container class="content">
       <el-aside width="260px" class="aside">
         <asidelft />
@@ -71,6 +72,8 @@
         </el-main>
       </el-container>
     </el-container>
+
+    <!-- songlist menu -->
     <el-drawer
       :modal-append-to-body="false"
       :show-close="false"

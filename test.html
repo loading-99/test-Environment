@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn {
+            position: fixed;
+            left: 0%;
+            top: 50%;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .inactive {
+            transform: translateY(-100vh);
+            transition: transform 2s;
+        }
+
+        .active {
+            transform: translateX(-50%) translateY(-50%) scale(2);
+            transition: transform 2s;
+
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            outline: gold solid 1px;
+            margin: calc((100vh -100px)/2) auto;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">切换</button>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <script>
+        let btn = document.querySelector('.btn');
+        let box1 = document.querySelector('.box1');
+        btn.addEventListener('click', function () {
+            if (box1.classList.contains('active')) {
+                box1.classList.remove('active');
+                box1.classList.add('inactive');
+            }
+            else {
+                box1.classList.add('active');
+                box1.classList.remove('inactive');
+            };
+        })
+    </script>
+</body>
+
+</html>
