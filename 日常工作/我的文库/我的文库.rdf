@@ -1,0 +1,1391 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#">
+    <bib:Article rdf:about="#item_1">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2168-2232"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wen</foaf:surname>
+                        <foaf:givenName>Shiping</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Rui</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yang</foaf:surname>
+                        <foaf:givenName>Yin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Huang</foaf:surname>
+                        <foaf:givenName>Tingwen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zeng</foaf:surname>
+                        <foaf:givenName>Zhigang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Song</foaf:surname>
+                        <foaf:givenName>Yong-Duan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_4"/>
+        <dcterms:isReferencedBy rdf:resource="#item_5"/>
+        <dcterms:isReferencedBy rdf:resource="#item_3"/>
+        <link:link rdf:resource="#item_2"/>
+        <link:link rdf:resource="#item_6"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Biological neural networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computational modeling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Echo state network</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Hardware</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>least mean quare</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>memristor</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Memristors</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>neural network</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Neurons</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Reservoirs</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Training</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>aba</dc:subject>
+        <dc:title>Memristor-Based Echo State Network With Online Least Mean Square</dc:title>
+        <dcterms:abstract>In this paper, we propose a novel computational architecture of memristor-based echo state network (MESN) with the online least mean square (LMS) algorithm. Newman and Watts small-world network is adopted for the topological structure of MESN network with memristive neural synapses. In the MESN network, the state matrix of the reservoir layer, which is obtained by raising the dimension of input data, is utilized as an input of the LMS algorithm to train the output weight matrix on chip. After certain iterations, the resistance value of memristor is adjusted to a constant. Thus, the final weight output matrix is obtained. To verify the effectiveness of the proposed MESN network, car evaluation and short-term power load forecasting are employed with the effect evaluation of the node number and the connectivity degree of the reservoir layer. The research provides a novel way to design neuromorphic computing systems.</dcterms:abstract>
+        <dc:date>2019-09</dc:date>
+        <z:libraryCatalog>IEEE Xplore</z:libraryCatalog>
+        <dc:description>Conference Name: IEEE Transactions on Systems, Man, and Cybernetics: Systems</dc:description>
+        <bib:pages>1787-1796</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2168-2232">
+        <prism:volume>49</prism:volume>
+        <dc:title>IEEE Transactions on Systems, Man, and Cybernetics: Systems</dc:title>
+        <dc:identifier>DOI 10.1109/TSMC.2018.2825021</dc:identifier>
+        <prism:number>9</prism:number>
+        <dc:identifier>ISSN 2168-2232</dc:identifier>
+    </bib:Journal>
+   <bib:Memo rdf:about="#item_4"><rdf:value></rdf:value></bib:Memo>
+   <bib:Memo rdf:about="#item_5"><rdf:value></rdf:value></bib:Memo>
+    <bib:Memo rdf:about="#item_3">
+        <rdf:value>&lt;p&gt;asdjlkjflfajksdfkjl&lt;/p&gt;</rdf:value>
+        <dc:subject>asdl;jkf</dc:subject>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_2">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/2/Wen 等。 - 2019 - Memristor-Based Echo State Network With Online Lea.pdf"/>
+        <dc:subject>wode</dc:subject>
+        <dc:title>IEEE Xplore Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&amp;arnumber=8354924&amp;ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL3N0YW1wL3N0YW1wLmpzcD90cD0mYXJudW1iZXI9ODM1NDkyNA==</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-16 14:48:01</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_6">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/6/8354924.html"/>
+        <dc:title>IEEE Xplore Abstract Record</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/document/8354924?arnumber=8354924</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-16 14:53:48</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_11">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1558-2256"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ortega</foaf:surname>
+                        <foaf:givenName>Antonio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Frossard</foaf:surname>
+                        <foaf:givenName>Pascal</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kovačević</foaf:surname>
+                        <foaf:givenName>Jelena</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Moura</foaf:surname>
+                        <foaf:givenName>José M. F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vandergheynst</foaf:surname>
+                        <foaf:givenName>Pierre</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_12"/>
+        <link:link rdf:resource="#item_13"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Data models</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Graph signal processing (GSP)</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Graph theory</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Graphical models</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Laplace equations</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Machine learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>network science and graphs</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>sampling</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Sampling methods</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>signal processing</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Signal processing</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Social network services</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Graph Signal Processing: Overview, Challenges, and Applications</dc:title>
+        <dcterms:abstract>Research in graph signal processing (GSP) aims to develop tools for processing data defined on irregular graph domains. In this paper, we first provide an overview of core ideas in GSP and their connection to conventional digital signal processing, along with a brief historical perspective to highlight how concepts recently developed in GSP build on top of prior research in other areas. We then summarize recent advances in developing basic GSP tools, including methods for sampling, filtering, or graph learning. Next, we review progress in several application areas using GSP, including processing and analysis of sensor network data, biological data, and applications to image processing and machine learning.</dcterms:abstract>
+        <dc:date>2018-05</dc:date>
+        <z:shortTitle>Graph Signal Processing</z:shortTitle>
+        <z:libraryCatalog>IEEE Xplore</z:libraryCatalog>
+        <dc:description>Conference Name: Proceedings of the IEEE</dc:description>
+        <bib:pages>808-828</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1558-2256">
+        <prism:volume>106</prism:volume>
+        <dc:title>Proceedings of the IEEE</dc:title>
+        <dc:identifier>DOI 10.1109/JPROC.2018.2820126</dc:identifier>
+        <prism:number>5</prism:number>
+        <dc:identifier>ISSN 1558-2256</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_12">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/12/Ortega 等。 - 2018 - Graph Signal Processing Overview, Challenges, and.pdf"/>
+        <dc:title>IEEE Xplore Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&amp;arnumber=8347162&amp;ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzgzNDcxNjI=</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-21 12:05:26</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_13">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/13/8347162.html"/>
+        <dc:title>IEEE Xplore Abstract Record</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://ieeexplore.ieee.org/document/8347162</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-21 12:05:39</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_14">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>107</prism:volume>
+                <dc:title>Proceedings of the IEEE</dc:title>
+                <dc:identifier>DOI 10.1109/JPROC.2019.2921977</dc:identifier>
+                <prism:number>8</prism:number>
+                <dc:identifier>ISSN 1558-2256</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Jiasi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ran</foaf:surname>
+                        <foaf:givenName>Xukan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_15"/>
+        <link:link rdf:resource="#item_16"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computational modeling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Training</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Machine learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Artificial intelligence</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Cloud computing</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Computer vision</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Deep learning</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>edge computing</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Edge computing</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>machine learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>mobile computing</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>neural networks</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Neural networks</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Servers</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Deep Learning With Edge Computing: A Review</dc:title>
+        <dcterms:abstract>Deep learning is currently widely used in a variety of applications, including computer vision and natural language processing. End devices, such as smartphones and Internet-of-Things sensors, are generating data that need to be analyzed in real time using deep learning or used to train deep learning models. However, deep learning inference and training require substantial computation resources to run quickly. Edge computing, where a fine mesh of compute nodes are placed close to end devices, is a viable way to meet the high computation and low-latency requirements of deep learning on edge devices and also provides additional benefits in terms of privacy, bandwidth efficiency, and scalability. This paper aims to provide a comprehensive review of the current state of the art at the intersection of deep learning and edge computing. Specifically, it will provide an overview of applications where deep learning is used at the network edge, discuss various approaches for quickly executing deep learning inference across a combination of end devices, edge servers, and the cloud, and describe the methods for training deep learning models across multiple edge devices. It will also discuss open challenges in terms of systems performance, network technologies and management, benchmarks, and privacy. The reader will take away the following concepts from this paper: understanding scenarios where deep learning at the network edge can be useful, understanding common techniques for speeding up deep learning inference and performing distributed training on edge devices, and understanding recent trends and opportunities.</dcterms:abstract>
+        <dc:date>2019-08</dc:date>
+        <z:shortTitle>Deep Learning With Edge Computing</z:shortTitle>
+        <z:libraryCatalog>IEEE Xplore</z:libraryCatalog>
+        <dc:description>Conference Name: Proceedings of the IEEE</dc:description>
+        <bib:pages>1655-1674</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_15">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/15/Chen 和 Ran - 2019 - Deep Learning With Edge Computing A Review.pdf"/>
+        <dc:title>IEEE Xplore Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&amp;arnumber=8763885&amp;ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50Lzg3NjM4ODU=</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-21 12:07:17</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_16">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/16/8763885.html"/>
+        <dc:title>IEEE Xplore Abstract Record</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://ieeexplore.ieee.org/document/8763885</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-21 12:07:21</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_17">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>107</prism:volume>
+                <dc:title>Proceedings of the IEEE</dc:title>
+                <dc:identifier>DOI 10.1109/JPROC.2019.2941458</dc:identifier>
+                <prism:number>11</prism:number>
+                <dc:identifier>ISSN 1558-2256</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Park</foaf:surname>
+                        <foaf:givenName>Jihong</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Samarakoon</foaf:surname>
+                        <foaf:givenName>Sumudu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bennis</foaf:surname>
+                        <foaf:givenName>Mehdi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Debbah</foaf:surname>
+                        <foaf:givenName>Mérouane</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_18"/>
+        <link:link rdf:resource="#item_19"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Data models</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Machine learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Cloud computing</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>5G mobile communication</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>6G</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>6G mobile communication</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Artificial neural networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>beyond 5G</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>distributed machine learning (ML)</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>latency</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>on-device machine learningML</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>reliability</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>scalability</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Scalability</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Training data</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>ultrareliable and low-latency communication (URLLC)</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Wireless networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Wireless Network Intelligence at the Edge</dc:title>
+        <dcterms:abstract>Fueled by the availability of more data and computing power, recent breakthroughs in cloud-based machine learning (ML) have transformed every aspect of our lives from face recognition and medical diagnosis to natural language processing. However, classical ML exerts severe demands in terms of energy, memory, and computing resources, limiting their adoption for resource-constrained edge devices. The new breed of intelligent devices and high-stake applications (drones, augmented/virtual reality, autonomous systems, and so on) requires a novel paradigm change calling for distributed, low-latency and reliable ML at the wireless network edge (referred to as edge ML). In edge ML, training data are unevenly distributed over a large number of edge nodes, which have access to a tiny fraction of the data. Moreover, training and inference are carried out collectively over wireless links, where edge devices communicate and exchange their learned models (not their private data). In a first of its kind, this article explores the key building blocks of edge ML, different neural network architectural splits and their inherent tradeoffs, as well as theoretical and technical enablers stemming from a wide range of mathematical disciplines. Finally, several case studies pertaining to various high-stake applications are presented to demonstrate the effectiveness of edge ML in unlocking the full potential of 5G and beyond.</dcterms:abstract>
+        <dc:date>2019-11</dc:date>
+        <z:libraryCatalog>IEEE Xplore</z:libraryCatalog>
+        <dc:description>Conference Name: Proceedings of the IEEE</dc:description>
+        <bib:pages>2204-2239</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_18">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/18/Park 等。 - 2019 - Wireless Network Intelligence at the Edge.pdf"/>
+        <dc:title>IEEE Xplore Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&amp;arnumber=8865093&amp;ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50Lzg4NjUwOTM=</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-21 12:08:15</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_19">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/19/8865093.html"/>
+        <dc:title>IEEE Xplore Abstract Record</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://ieeexplore.ieee.org/document/8865093</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-21 12:08:32</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-4193-6">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>ISBN 978-1-4503-4193-6</dc:identifier>
+                <dc:title>Proceedings of the 2016 ACM SIGCOMM Conference</dc:title>
+                <dc:identifier>DOI 10.1145/2934872.2959061</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Florianopolis Brazil</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>ACM</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Hao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Chengchen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Peng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Xie</foaf:surname>
+                        <foaf:givenName>Lei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_23"/>
+        <dc:title>Modular SDN Compiler Design with Intermediate Representation</dc:title>
+        <dc:date>2016-08-22</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/10.1145/2934872.2959061</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:37:20</dcterms:dateSubmitted>
+        <bib:pages>587-588</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+               <dc:title>SIGCOMM '16: ACM SIGCOMM 2016 Conference</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_23">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/23/Li 等。 - 2016 - Modular SDN Compiler Design with Intermediate Repr.pdf"/>
+        <dc:title>Li 等。 - 2016 - Modular SDN Compiler Design with Intermediate Repr.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/2934872.2959061</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:35:54</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://dl.acm.org/doi/epdf/10.1109/TNET.2020.3033588">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>Network-Wide Forwarding Anomaly Detection and Localization in Software Defined Networks</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/epdf/10.1109/TNET.2020.3033588</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:42:37</dcterms:dateSubmitted>
+        <dc:description>DOI: 10.1109/TNET.2020.3033588</dc:description>
+    </bib:Document>
+    <bib:Article rdf:about="#item_43">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <prism:volume>29</prism:volume><prism:number>1</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Peng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Fangzheng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Xu</foaf:surname>
+                        <foaf:givenName>Shimin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yang</foaf:surname>
+                        <foaf:givenName>Zuoru</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Hao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Qi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Chengchen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_41"/>
+        <dc:title>Network-Wide Forwarding Anomaly Detection and Localization in Software Defined Networks</dc:title>
+        <dcterms:abstract>OF KEY NOTATIONS Suppose due to attacks the FCM is changed to H = H.</dcterms:abstract>
+        <dc:date>2021</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+        <bib:pages>14</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_41">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/41/Zhang 等。 - 2021 - Network-Wide Forwarding Anomaly Detection and Loca.pdf"/>
+        <dc:title>Zhang 等。 - 2021 - Network-Wide Forwarding Anomaly Detection and Loca.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1109/TNET.2020.3033588</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:46:41</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-7948-9">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dcterms:isPartOf>
+                   <bib:Series><dc:title>CoNEXT '20</dc:title></bib:Series>
+                </dcterms:isPartOf>
+                <dc:identifier>ISBN 978-1-4503-7948-9</dc:identifier>
+                <dc:title>Proceedings of the 16th International Conference on emerging Networking EXperiments and Technologies</dc:title>
+                <dc:identifier>DOI 10.1145/3386367.3432063</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>New York, NY, USA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Association for Computing Machinery</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Hao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Peng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sun</foaf:surname>
+                        <foaf:givenName>Guangda</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Chengchen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shan</foaf:surname>
+                        <foaf:givenName>Danfeng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pan</foaf:surname>
+                        <foaf:givenName>Tian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fu</foaf:surname>
+                        <foaf:givenName>Qiang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_48"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>intermediate representation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>network programming language</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>software defined networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>A modular compiler for network programming languages</dc:title>
+        <dcterms:abstract>Network programming languages (NPLs) empower operators to program network data planes (NDPs) with unprecedented efficiency. Currently, various NPLs and NDPs coexist and no one can prevail over others in the short future. Such diversity is raising many problems including: (1) programs written with different NPLs can hardly interoperate in the same network, (2) most NPLs are bound to specific NDPs, hindering their independent evolution, and (3) compilation techniques cannot be readily reused, resulting in much wasteful work. These problems are mostly owing to the lack of modularity in the compilers, where the missing part is an intermediate representation (IR) for NPLs. To this end, we propose Network Transaction Automaton (NTA), a highly-expressive and language-independent IR, and show it can express semantics of 7 mainstream NPLs. Then, we design CODER, a modular compiler based on NTA, which currently supports 2 NPLs and 3 NDPs. Experiments with real and synthetic network programs show CODER is efficient and scalable.</dcterms:abstract>
+        <dc:date>November 23, 2020</dc:date>
+        <z:libraryCatalog>ACM Digital Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1145/3386367.3432063</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-21</dcterms:dateSubmitted>
+        <bib:pages>198–210</bib:pages>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_48">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/48/Li 等。 - 2020 - A modular compiler for network programming languag.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/3386367.3432063</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:52:36</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1109/TNET.2020.3000430">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1063-6692"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Hao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bian</foaf:surname>
+                        <foaf:givenName>Zhengda</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Peng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sun</foaf:surname>
+                        <foaf:givenName>Zhun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Chengchen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fu</foaf:surname>
+                        <foaf:givenName>Qiang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pan</foaf:surname>
+                        <foaf:givenName>Tian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lv</foaf:surname>
+                        <foaf:givenName>Jia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_50"/>
+        <dc:title>Application-Oblivious L7 Parsing Using Recurrent Neural Networks</dc:title>
+        <dcterms:abstract>Extracting fields from layer 7 protocols such as HTTP, known as L7 parsing, is the key to many critical network applications. However, existing L7 parsing techniques center around protocol specifications, thereby incurring large human efforts in specifying data format and high computational/memory costs that poorly scale with the explosive number of L7 protocols. To this end, this paper introduces a new framework named content-based L7 parsing, where the content instead of the format becomes the first class citizen. Under this framework, users only need to label what content they are interested in, and the parser learns an extraction model from the users' labeling behaviors. Since the parser is specification-independent, both the human effort and computational/memory costs can be dramatically reduced. To realize content-based L7 parsing, we propose REPLAY which builds on recurrent neural network (RNN) and addresses a series of technical challenges like large labeling overhead and slow parsing speed. We prototype REPLAY on GPUs, and show it can achieve a precision of 98% and a recall of 97%, with a throughput as high as 12Gbps for diverse extraction tasks.</dcterms:abstract>
+        <dc:date>October 1, 2020</dc:date>
+        <z:libraryCatalog>Oct. 2020</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1109/TNET.2020.3000430</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:52:47</dcterms:dateSubmitted>
+        <bib:pages>2009–2022</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1063-6692">
+        <prism:volume>28</prism:volume>
+        <dc:title>IEEE/ACM Transactions on Networking</dc:title>
+        <dc:identifier>DOI 10.1109/TNET.2020.3000430</dc:identifier>
+        <prism:number>5</prism:number>
+        <dcterms:alternative>IEEE/ACM Trans. Netw.</dcterms:alternative>
+        <dc:identifier>ISSN 1063-6692</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_50">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/50/Li 等。 - 2020 - Application-Oblivious L7 Parsing Using Recurrent N.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1109/TNET.2020.3000430</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:52:49</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-8876-4">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dcterms:isPartOf>
+                   <bib:Series><dc:title>APNet '20</dc:title></bib:Series>
+                </dcterms:isPartOf>
+                <dc:identifier>ISBN 978-1-4503-8876-4</dc:identifier>
+                <dc:title>4th Asia-Pacific Workshop on Networking</dc:title>
+                <dc:identifier>DOI 10.1145/3411029.3411030</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>New York, NY, USA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Association for Computing Machinery</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Hao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Peng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sun</foaf:surname>
+                        <foaf:givenName>Guangda</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Chengchen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shan</foaf:surname>
+                        <foaf:givenName>Danfeng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pan</foaf:surname>
+                        <foaf:givenName>Tian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fu</foaf:surname>
+                        <foaf:givenName>Qiang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_52"/>
+        <dc:title>An Intermediate Representation for Network Programming Languages</dc:title>
+        <dcterms:abstract>Network programming languages (NPLs) empower operators to program network data planes (NDPs) with unprecedented efficiency. Currently, various NPLs and NDPs coexist and no one can prevail over others in the short future. Such diversity is raising many problems including: (1) programs written with different languages can hardly interoperate in the same network, and (2) most NPLs are bound to specific NDPs, hindering their independent evolution. These problems are mostly owing to the lack of modularity in the compilers, where the missing part is an intermediate representation (IR) for NPLs. To this end, we propose Network Transaction Automaton (NTA), a highly-expressive and language-independent representation as the IR. We show that NTA can express semantics of 6 mainstream NPLs, and can be composed efficiently without any semantics loss.</dcterms:abstract>
+        <dc:date>August 3, 2020</dc:date>
+        <z:libraryCatalog>ACM Digital Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1145/3411029.3411030</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-21</dcterms:dateSubmitted>
+        <bib:pages>1–7</bib:pages>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_52">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/52/Li 等。 - 2020 - An Intermediate Representation for Network Program.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/3411029.3411030</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:53:10</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1109/TNSM.2020.2973222">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1932-4537"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Huang</foaf:surname>
+                        <foaf:givenName>Victoria</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Gang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Peng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Hao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Chengchen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pan</foaf:surname>
+                        <foaf:givenName>Tian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fu</foaf:surname>
+                        <foaf:givenName>Qiang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>A Scalable Approach to SDN Control Plane Management: High Utilization Comes With Low Latency</dc:title>
+        <dcterms:abstract>One major research challenge for Software-Defined Networking is to properly deploy and efficiently utilize multiple controllers to improve resource utilization and maintain high network performance. While addressing this Controller Placement Problem (CPP), many existing studies overlooked the importance and influence of the Controller Scheduling Problem (CSP) with the central focus on proper distribution of requests from all switches among all controllers. In this paper, we define a new Controller Placement and Scheduling Problem (CPSP), emphasizing on the necessity and importance of tackling both CPP and CSP simultaneously in a coherent framework. To solve CPSP, we must seek a combination of solutions to both problems. Particularly, CSP is addressed based on a given solution to CPP and a Gradient-Descent-based (GD-based) scheduling algorithm is developed to optimize the probabilistic distribution of requests among all controllers. Built on the GD-based approach for controller scheduling, a Clustering-based Genetic Algorithm with Cooperative Clusters (CGA-CC) is further proposed to address CPP. In comparison to the majority of heuristic methods developed in the past, CGA-CC has two unique strengths. Specifically, it partitions a large network to substantially reduce the search space of the Genetic Algorithm (GA), resulting in fast identification of high-quality CPP solutions. Moreover, a greedy load re-distribution mechanism is developed to handle unexpected demand variations by dynamically forwarding bursting requests to neighboring sub-networks. Extensive simulations showed that our algorithms can significantly outperform several existing algorithms, including a recently proposed approach called Multi-controller Selection and Placement Algorithm (MSPA), in terms of both response time and controller utilization.</dcterms:abstract>
+        <dc:date>June 1, 2020</dc:date>
+        <z:shortTitle>A Scalable Approach to SDN Control Plane Management</z:shortTitle>
+        <z:libraryCatalog>June 2020</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1109/TNSM.2020.2973222</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:53:25</dcterms:dateSubmitted>
+        <bib:pages>682–695</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1932-4537">
+        <prism:volume>17</prism:volume>
+        <dc:title>IEEE Transactions on Network and Service Management</dc:title>
+        <dc:identifier>DOI 10.1109/TNSM.2020.2973222</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>IEEE Trans. on Netw. and Serv. Manag.</dcterms:alternative>
+        <dc:identifier>ISSN 1932-4537</dc:identifier>
+    </bib:Journal>
+    <bib:Document rdf:about="https://dl.acm.org/doi/10.1145/2999572.2999605">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>Mind the Gap | Proceedings of the 12th International on Conference on emerging Networking EXperiments and Technologies</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/10.1145/2999572.2999605</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:53:45</dcterms:dateSubmitted>
+    </bib:Document>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-4292-6">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dcterms:isPartOf>
+                   <bib:Series><dc:title>CoNEXT '16</dc:title></bib:Series>
+                </dcterms:isPartOf>
+                <dc:identifier>ISBN 978-1-4503-4292-6</dc:identifier>
+                <dc:title>Proceedings of the 12th International on Conference on emerging Networking EXperiments and Technologies</dc:title>
+                <dc:identifier>DOI 10.1145/2999572.2999605</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>New York, NY, USA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Association for Computing Machinery</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Peng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Hao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Chengchen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Liujia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Xiong</foaf:surname>
+                        <foaf:givenName>Lei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wang</foaf:surname>
+                        <foaf:givenName>Ruilong</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Yuemei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_56"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>consistency</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>software defined network</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>verification</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Mind the Gap: Monitoring the Control-Data Plane Consistency in Software Defined Networks</dc:title>
+        <dcterms:abstract>How to debug large networks is always a challenging task. Software Defined Network (SDN) offers a centralized con- trol platform where operators can statically verify network policies, instead of checking configuration files device-by-device. While such a static verification is useful, it is still not enough: due to data plane faults, packets may not be forwarded according to control plane policies, resulting in network faults at runtime. To address this issue, we present VeriDP, a tool that can continuously monitor what we call control-data plane consistency, defined as the consistency between control plane policies and data plane forwarding behaviors. We prototype VeriDP with small modifications of both hardware and software SDN switches, and show that it can achieve a verification speed of 3 μs per packet, with a false negative rate as low as 0.1%, for the Stanford backbone and Internet2 topologies. In addition, when verification fails, VeriDP can localize faulty switches with a probability as high as 96% for fat tree topologies.</dcterms:abstract>
+        <dc:date>December 6, 2016</dc:date>
+        <z:shortTitle>Mind the Gap</z:shortTitle>
+        <z:libraryCatalog>ACM Digital Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1145/2999572.2999605</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-21</dcterms:dateSubmitted>
+        <bib:pages>19–33</bib:pages>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_56">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/56/Zhang 等。 - 2016 - Mind the Gap Monitoring the Control-Data Plane Co.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/2999572.2999605</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:54:04</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-4183-7">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dcterms:isPartOf>
+                   <bib:Series><dc:title>ANCS '16</dc:title></bib:Series>
+                </dcterms:isPartOf>
+                <dc:identifier>ISBN 978-1-4503-4183-7</dc:identifier>
+                <dc:title>Proceedings of the 2016 Symposium on Architectures for Networking and Communications Systems</dc:title>
+                <dc:identifier>DOI 10.1145/2881025.2881038</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>New York, NY, USA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Association for Computing Machinery</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Peng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Hao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Chengchen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Liujia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Xiong</foaf:surname>
+                        <foaf:givenName>Lei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_58"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>verification</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>monitor</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>policy compliance</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>SDN</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Stick to the Script: Monitoring The Policy Compliance of SDN Data Plane</dc:title>
+        <dcterms:abstract>Software defined networks provide new opportunities for automating the process of network debugging. Many tools have been developed to verify the correctness of network configurations on the control plane. However, due to software bugs and hardware faults of switches, the correctness of control plane may not readily translate into that of data plane. To bridge this gap, we present VeriDP, which can monitor &quot;whether actual forwarding behaviors are complying with network configurations&quot;. Given that policies are well-configured, operators can leverage VeriDP to monitor the correctness of the network data plane. In a nutshell, VeriDP lets switches tag packets that they forward, and report tags together with headers to the verification server before the packets leave the network. The verification server pre-computes all header-to-tag mappings based on the configuration, and checks whether the reported tags agree with the mappings. We prototype VeriDP with both software and hardware OpenFlow switches, and use emulation to show that VeriDP can detect common data plane fault including black holes and access violations, with a minimal impact on the data plane.</dcterms:abstract>
+        <dc:date>March 17, 2016</dc:date>
+        <z:shortTitle>Stick to the Script</z:shortTitle>
+        <z:libraryCatalog>ACM Digital Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1145/2881025.2881038</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-21</dcterms:dateSubmitted>
+        <bib:pages>81–86</bib:pages>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_58">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/58/Zhang 等。 - 2016 - Stick to the Script Monitoring The Policy Complia.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/2881025.2881038</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:54:37</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4673-6632-8">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dcterms:isPartOf>
+                   <bib:Series><dc:title>ANCS '15</dc:title></bib:Series>
+                </dcterms:isPartOf>
+                <dc:identifier>ISBN 978-1-4673-6632-8</dc:identifier>
+                <dc:title>Proceedings of the Eleventh ACM/IEEE Symposium on Architectures for networking and communications systems</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>USA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>IEEE Computer Society</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Hao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Chengchen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hong</foaf:surname>
+                        <foaf:givenName>Junkai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Xiyu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jiang</foaf:surname>
+                        <foaf:givenName>Yuming</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_60"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>application layer parsing</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>parser</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>software-defined networking</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Parsing Application Layer Protocol with Commodity Hardware for SDN</dc:title>
+        <dcterms:abstract>The de facto implementation of Software Defined Networking (SDN), ie, OpenFlow, only parses L2-L4 headers, which limits the use of SDN to employ control intelligence in application layer. In this paper, we advocate content parsing to empower SDN with finer grained control ability over traffic. Specifically, we propose a scalable content parser, called COPY, to identify and parse application layer protocols. COPY creates a distinguishable counting context free grammar (DCCFG) to specify the protocol's semantics in application layer, and translates multiple DCCFGs into one distinguishable counting automaton (DCA). DCA is generated without semantic loss from the single DCCFG, and thus provides accurate and scalable parsing ability. Our experiments show that COPY precisely identifies every packet in a labeled trace. When comparing with other six approaches on the real traces, COPY performs 4.2Gb/s and 24.7Gb/s with single- and eight-thread models, respectively, which improves 20\%--860\% than others, and consumes acceptable off-line overhead in time and space.</dcterms:abstract>
+        <dc:date>May 7, 2015</dc:date>
+        <z:libraryCatalog>ACM Digital Library</z:libraryCatalog>
+        <dcterms:dateSubmitted>2021-09-21</dcterms:dateSubmitted>
+        <bib:pages>51–61</bib:pages>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_60">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/60/Li 等。 - 2015 - Parsing Application Layer Protocol with Commodity .pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.5555/2772722.2772732</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2021-09-22 02:55:29</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Collection rdf:about="#collection_2">
+        <dc:title>LiHao</dc:title>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-1-4503-4193-6"/>
+        <dcterms:hasPart rdf:resource="#item_43"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-1-4503-7948-9"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1109/TNET.2020.3000430"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-1-4503-8876-4"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1109/TNSM.2020.2973222"/>
+        <dcterms:hasPart rdf:resource="https://dl.acm.org/doi/10.1145/2999572.2999605"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-1-4503-4292-6"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-1-4503-4183-7"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-1-4673-6632-8"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_1">
+        <dc:title>test</dc:title>
+        <dcterms:hasPart rdf:resource="#item_1"/>
+        <dcterms:hasPart rdf:resource="#item_11"/>
+        <dcterms:hasPart rdf:resource="#item_14"/>
+        <dcterms:hasPart rdf:resource="#item_17"/>
+    </z:Collection>
+</rdf:RDF>

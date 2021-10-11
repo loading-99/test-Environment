@@ -1,0 +1,391 @@
+Loading web-font TeX/Size3/Regular
+
+Skip to Main Content
+
+    IEEE.org
+    IEEE Xplore
+    IEEE-SA
+    IEEE Spectrum
+    More Sites 
+
+    Cart 
+    Create Account
+    Personal Sign In
+
+IEEE Xplore logo - Link to home
+
+    Browse
+    My Settings
+    Help
+
+Access provided by:
+Xian Jiaotong University
+Sign Out
+IEEE logo - Link to IEEE main site homepage
+ADVANCED SEARCH
+Journals & Magazines > IEEE Transactions on Systems,... > Volume: 49 Issue: 9
+Memristor-Based Echo State Network With Online Least Mean Square
+Publisher: IEEE
+Cite This
+PDF
+Shiping Wen ; Rui Hu ; Yin Yang ; Tingwen Huang ; Zhigang Zeng ; Yong-Duan Song
+All Authors
+20
+Paper
+Citations
+995
+Full
+Text Views
+
+    Alerts
+
+Abstract
+Document Sections
+
+    I.
+    Introduction
+    II.
+    ESN Training Algorithm
+    III.
+    ESN in Hardware
+    IV.
+    Simulation and Result
+    V.
+    Conclusion
+
+Authors
+Figures
+References
+Citations
+Keywords
+Metrics
+Abstract:
+In this paper, we propose a novel computational architecture of memristor-based echo state network (MESN) with the online least mean square (LMS) algorithm. Newman and Watts small-world network is adopted for the topological structure of MESN network with memristive neural synapses. In the MESN network, the state matrix of the reservoir layer, which is obtained by raising the dimension of input data, is utilized as an input of the LMS algorithm to train the output weight matrix on chip. After certain iterations, the resistance value of memristor is adjusted to a constant. Thus, the final weight output matrix is obtained. To verify the effectiveness of the proposed MESN network, car evaluation and short-term power load forecasting are employed with the effect evaluation of the node number and the connectivity degree of the reservoir layer. The research provides a novel way to design neuromorphic computing systems.
+Published in: IEEE Transactions on Systems, Man, and Cybernetics: Systems ( Volume: 49 , Issue: 9 , Sept. 2019 )
+Page(s): 1787 - 1796
+Date of Publication: 04 May 2018
+ISSN Information:
+INSPEC Accession Number: 18905974
+DOI: 10.1109/TSMC.2018.2825021
+Publisher: IEEE
+Funding Agency:
+SECTION I.
+Introduction
+
+Compared with the traditional computer, human brain is not only characterized as a biological organization but also a large number of parallel nonlinear processing units with self-organized and self-learning properties. Biological neural networks are the most skillful and complex information processing systems with unparalleled information processing capabilities in real life [1] , [2] .
+
+Artificial neural network (ANN) is utilized to simulate the structure and function of biological neural network [3] . Based on the rapid development of contemporary neurobiology, mathematics, physics, and computer science, ANN research becomes a hot topic [2] , [4] , [5] with a large number of proposed ANN models, such as the McCulloch–Pitts neuron model [6] , linear threshold function neuron model [7] , backpropagation neural network model [8] , RNN model [9] , and so on.
+
+Compared with feed/forward neural networks, RNNs can describe the system dynamic characteristics better [10] and simulate the human brain more appropriately. Under normal circumstances, RNNs can infinitely approach any complex nonlinear dynamic system. These advantages make RNN widely used in prediction [11] , nonlinear system identification [12] , and adaptive filtering [13] . Nonetheless, some inevitable problems still exist in RNNs, for example, the network structure and training algorithm are complex, the computation is large, the convergence speed is slow, and the error gradient may disappear or produce distortion with the increase of training steps. Some improvements have been achieved in recent years [14] – [15] [16] . However, it is difficult to solve the problem of the heavy computational burden in the training process.
+
+In order to reduce the computational burden and overcome the problem of memory fading in the training process, in 2001 [17] , Jaeger proposed ESN, which also solves the structural defects in traditional RNNs. In 2002, ESN is collectively referred to as “reservoir computing model” [18] . The most significant difference between ESN and traditional RNNs lies in the structure of reservoir layer. The weights of each layer in traditional RNNs are computed by the gradient descent algorithm. However, in ESN, only the weights between reservoir layer and output layer need to be trained, which greatly reduces the computational complexity of traditional RNNs. These advantages make ESN gradually become a research hot topic in the field of neural networks [19] , [20] .
+
+At present, ANN is mainly implemented by computer software. The computer processor can only execute one instruction per core in a cycle, so the processing speed is slow and difficult to meet the real-time requirements. Meanwhile, in some harsh applications high stability are required, the software implementation of neural networks is not applicable. On the other hand, hardware implementation, which includes optical technology, very-large-scale integration (VLSI) technology and molecular biotechnology, can exert the characteristics of large-scale parallel processing for ANN, especially in dealing with big data problems [21] . VLSI technology is widely applied for high precision, mature technology, and superior anti-noise capability. Therefore, the realization of neural networks usually use VLSI Technology. In 1989, Mead [22] proposed a concept of neuromorphic computing and a method to simulate the structure of the nervous system with a neural circuit. Subsequently, Smith and Hamliton [23] proposed a kind of VLSI to simulate the brain structure and function. Neural networks have been implemented on CPU, GPU [24] , FPGA [25] , and other computing platforms, but when the computation load of the system becomes larger, memory wall and other issues will arise [26] . In order to enhance scalability, a novel neural system based on pulse time signal has been proposed to achieve biological functions by the traditional CMOS devices directly. Each synaptic weight is stored in the SRAM unit, and takes the form of pulse signal to learn and recall [27] .
+
+The realization of CMOS-based computing hardware is of great significance to neuromorphic computing, but there still exist many issues left to be solved. For example, the leakage power is too high and the storage density of the SRAM unit is too low, which leads to a large amount of energy consumption in the process of storing, reading, and programming synaptic weights [28] . At present, the number of synapses in a single integrated circuit is only 10 2 –10 5 , but the number of synapses in brain is up to 10 14 . In a word, the energy consumption of these traditional means is too large, and the density of synapses is not up to the level of biological brain.
+
+In 1971, based on the relationships between charge, current, voltage, and magnetic flux, Chua [29] suspected the existence of fourth electronic components and proposed the concept of memristor. Until 2008, HP labs successfully fabricated the memristor with the semiconductor material [30] . The emergence of memristor promotes the development of neural networks with nonvolatile memory. Meanwhile, memristor can also perform logic operations with a very high degree of integration as a nanoscale device. The excellent characteristics of memristor provide great foundation to develop neuromorphic systems. Combined with memristor, several neural networks have been successfully designed [31] – [32] [33] [34] .
+
+The traditional reservoir layer is usually composed of a large number of neurons, this kind of complex physical topology puts forward a high requirement to the hardware technology. Therefore, the traditional model of reservoir layer is mainly based on software. In recent years, there are quite a lot of research results about hardware implementation of ESN [35] – [36] [37] . Kudithipudi et al. [38] , Saleh et al. [39] , and Merkel et al. [40] optimized the architecture of reservoir computing. Based on the new structure and memristor, scalable computational circuits of echo state network are realized. The circuits are applied separately to biological signal processing, speech-emotion recognition, and epileptic seizure detection. Kulkarni and Teuscher [41] and Yang et al. [42] used memristor to realize random connection between neuron nodes of the reservoir layer. All these researches provide references for hardware implementation of ESN. Furthermore, hardware implementation of ESNs was first proposed to use memristor double crossbar arrays [43] . However, memristor is mainly used as a connection between synaptic nodes in the reservoir layer, the training of the weights between reservoir layer and output layer still adopts the method of calculating pseudo inverse matrix, which is difficult to realize with circuits.
+
+In this paper, a new scheme is proposed to design memristor-based echo state network (MESN), in which reservoir layer is based on Newman and Watts (NW) small-world network, and the training of the output layer weights adopts the least mean square (LMS) algorithm. The state matrix of the reservoir layer, which is obtained by raising the dimension of input data, is utilized as an input of the LMS algorithm to train the output weight matrix on chip. After certain iterations, the resistance value of memristor is adjusted to a constant. Thus, the final weight output matrix is obtained. The proposed scheme is applied to car evaluation and short-term power forecasting. The rest of this paper is organized as follows. The training algorithm of ESN is discussed in Section II . Section III provides the improved architecture and the design of synapse circuit. Section IV discusses the application of car evaluation and short-term power load forecasting and Section V presents the conclusions.
+SECTION II.
+ESN Training Algorithm
+
+ESN, as a special class of RNN, was proposed by Jaeger in 2001 [17] . Different from the traditional RNNs, ESN only needs to adjust the output weights between the reservoir layer and output layer. Moreover, the reservoir layer of ESN is randomly generated with sparse connected neuron with excellent nonlinear processing capability and simple effective training process.
+A. Basic Structure of Echo State Network
+
+As a kind of neural networks, ESN also has three layers: 1) input layer; 2) hidden layer; and 3) output layer as shown in Fig. 1 . The hidden layer is called reservoir layer, which is composed of a large scale and sparse connected recurrent neural network. The reservoir layer has the following characteristics: 1) the number of neurons is huge; 2) the connections between neurons are randomly generated; and 3) connections between neurons are sparse.
+Fig. 1.
+
+Structure of ESN.
+
+Show All
+
+For the topology shown in Fig. 1 , the state vectors of the reservoir layer can be iterated and updated as
+x ( n + 1 ) = f ( W x ( n ) + W i n u ( n ) + W b a c k y ( n ) ) (1)
+View Source \begin{equation} \mathbf {x}\left ({n+1}\right)=f\left ({\mathbf {Wx}\left ({n}\right)+\mathbf {W}_{\mathrm{ in}}\mathbf {u}\left ({n}\right)+\mathbf {W}_{\mathrm{ back}}\mathbf {y}\left ({n}\right)}\right) \end{equation} where u ( n ) is the ESN input signal connected to the reservoir layer through an input-connect matrix W i n . In addition, the reservoir layer can also receive feedback y ( n ) from the output layer and the internal feedback of reservoir layer x ( n ) . W b a c k is the feedback-connect matrix between the output and the reservoir layer. W is the weight matrix between neurons in the reservoir layer. f is the activation function of the reservoir layer, in general, it is sigmoid function or tanh function. Then, the output of ESN can be calculated as
+y ( n + 1 ) = f o u t ( W o u t x ( n + 1 ) ) (2)
+View Source \begin{equation} \mathbf {y}\left ({n+1}\right)=f_{\mathrm{ out}}\left ({\mathbf {W}_{\mathrm{ out}}\mathbf {x}\left ({n+1}\right)}\right) \end{equation} where W o u t is the output weight matrix at the readout layer and f o u t is the activation function of the readout layer. The output layer of the classical echo state network is a linear mapping layer, so f o u t is generally a function of identity.
+
+Meanwhile, the weights of the reservoir layer can be randomly set in advance rather than generated through training, the output layer weights can be trained separately to achieve the outstanding performance of ESN. Different from traditional neural networks, weight matrices W , W i n and W b a c k are randomly generated in the network initialization phase, and remain unchanged during the training process. Only the weight matrix W o u t between reservoir layer and output layer needs to be trained. The ESN network separates the information expression and the weight training process of the network in an ingenious way. The training of the output weights is independent of the weight setting of reservoir layer, which greatly simplifies the training process of RNN. On the other hand, the dynamic reservoir layer maps low-dimensional input to high-dimensional feature space, which guarantees the network to be trained with linear training method. The training process only needs to solve a linear regression problem. Therefore, the training process of the network can be completed by using simple linear regression algorithms. This greatly reduces the computational complexity of traditional recurrent neural networks and speeds up the convergence.
+B. Training Algorithm of Echo State Network
+
+Classical ESN usually adopts supervised learning and batch learning methods. Suppose that ESN contains L input units, M output units, and N reservoir nodes. The state matrix of reservoir x ( n ) and the actual output y ^ ( n ) according to (1) and (2) . To eliminate the influence of the initial system state of the dynamic characteristics, sample work is usually carried out after a period. It is assumed that the internal state of the reservoir layer is sampled from the time m . x 1 ( i ) , x 2 ( i ) , … , x n ( i ) ( i = m , m + 1 , … , M ) is used to constitute the row vector of the matrix X ( M − m + 1 , N ) , the label data y ( n ) were sampled at the same time, which constitutes the matrix Y ( M − m + 1 , 1 ) . The state matrix x ( n ) is linear with the system output y ^ ( n ) , however, the target is to make the actual output of the network y ( n ) approach the expected output y ( n ) as shown in
+y ( n ) ≈ y ^ ( n ) = ∑ i = 1 L w o u t i x i ( n ) . (3)
+View Source \begin{equation} \mathbf {y}\left ({n}\right)\approx \hat {\mathbf {y}} \left ({n}\right) = \sum _{i=1}^{L}{\mathbf {w}{_{i}^{\mathrm{ out}}}\mathbf {x}_{i}\left ({n}\right)}. \end{equation}
+
+To make the weights w o u t satisfy the requirement that the mean square error of the system is minimized, the following optimization problems need to be solved as:
+min w o u t i 1 M − m + 1 ∑ n = m M ⎛ ⎝ ( y ( n ) − ∑ i = 1 L w o u t i x i ( n ) ) 2 . (4)
+View Source \begin{equation} \min \limits _{\mathbf {w}{_{i}^{\mathrm{ out}}}}\frac {1}{M-m+1}\sum _{n=m}^{M}\left ({\left ({\mathbf {y}\left ({n}\right)-\sum _{i=1}^{L}{\mathbf {w}{_{i}^{\mathrm{ out}}}\mathbf {x}_{i}\left ({n}\right)}}\right)^{2}}\right.. \end{equation} If viewed from mathematics, it is a linear regression problem, so the solution process of the weights W o u t can be converted to calculating the inverse matrix problem of matrix X as
+W o u t = X − 1 Y . (5)
+View Source \begin{equation} \mathbf {W}^{\mathrm{ out}}=\mathbf {X}^{-1}\mathbf {Y}. \end{equation}
+
+C. Online Training Algorithm Based on Least Mean Square
+
+However, the training algorithm mentioned above is a basic offline training algorithm (or called batch algorithm). Since the matrix X may be singular, the inverse matrix of the matrix X can be calculated by using the pseudo inverse algorithm or the regularization technique, ridge regression algorithm [44] is commonly used. In order to solve the real-time requirements of the online problem, online training algorithm based on recursive least square algorithm is proposed with LMS to train the weights W o u t of the readout layer [45] .
+
+Widrow and Hoff [46] proposed LMS adaptive filters in 1960. The weight adjustment with LMS algorithm is based on the error correction-learning rule, which is easy to be achieved and has been widely used. LMS algorithm can only be trained on a single layer network, thus it can only solve linearly separable problems. However, as mentioned above, reservoir layer guarantees good performance of the network with linear training method. Therefore, LMS algorithm is suitable for ESN and easier to be achieved with hardware rather than other learning methods.
+
+The steps of the LMS algorithm are presented as follows.
+
+    Define variables and parameters. In order to facilitate the processing, bias is combined with weights
+    w ( n ) = [ b ( n ) , w 1 ( n ) , w 2 ( n ) , … , w N ( n ) ] T (6)
+    View Source \begin{equation} \mathbf {w}\left ({n}\right)=\left [{\mathbf {b}\left ({n}\right),\mathbf {w}_{1}\left ({n}\right),\mathbf {w}_{2}\left ({n}\right),\ldots,\mathbf {w}_{N}\left ({n}\right)}\right]^{T} \end{equation} where b ( n ) is bias, n is iteration number.
+
+    The corresponding training sample is
+    x ( n ) = [ 1 , x 1 ( n ) , x 2 ( n ) , … , x N ( n ) ] T . (7)
+    View Source \begin{equation} \mathbf {x}\left ({n}\right)=\left [{1,\mathbf {x}_{1}\left ({n}\right),\mathbf {x}_{2}\left ({n}\right),\ldots,\mathbf {x}_{N}\left ({n}\right)}\right]^{T}. \end{equation}
+
+    The initialization. Assign small random initial values to the weights w ( n ) , n = 0 .
+
+    Input the sample, calculate actual output y ( n ) and error e ( n ) . According to the given expected output d ( n ) , we can calculate
+    y ( n ) = e ( n ) = x T ( n ) w ( n ) d ( n ) − y ( n ) . (8) (9)
+    View Source \begin{align} \mathbf {y}\left ({n}\right)=&\mathbf {x}^{T}\left ({n}\right)\mathbf {w}\left ({n}\right) \\ \mathbf {e}\left ({n}\right)=&\mathbf {d}\left ({n}\right)-\mathbf {y}\left ({n}\right). \end{align}
+
+    Adjust the weight vector. Set the learning rate η and calculate
+    w ( n + 1 ) = w ( n ) − η x T ( n ) e ( n ) . (10)
+    View Source \begin{equation} \mathbf {w}\left ({n+1}\right)=\mathbf {w}\left ({n}\right)-\eta \mathbf {x}^{T}\left ({n}\right)\mathbf {e}\left ({n}\right). \end{equation}
+
+    Realization block diagram of (10) is as shown in Fig. 2 .
+
+    Judge whether the algorithm is convergent. If the convergent condition is satisfied, the algorithm will be ended, otherwise n=n+1 and jump to the third step.
+
+Fig. 2.
+
+Realization block diagram of (10) .
+
+Show All
+
+SECTION III.
+ESN in Hardware
+
+A block diagram is shown in Fig. 3 , which consists of three modules: 1) the input layer; 2) the reservoir based on small-world network; and 3) the weight training circuit based on memristor. Dealt with the reservoir based on small-world network, the L -dimensional input vector is mapped to N -dimensional feature space. The output of reservoir is treated as the input of weight training circuit based on memristor. The following two aspects will be described in detail.
+
+    Architectural topology of the reservoirs.
+
+    Training algorithm based on memristor.
+
+Fig. 3.
+
+Architecture overview of MESN.
+
+Show All
+
+A. Architectural Topology of the Reservoir Layer
+
+The reservoir layer plays a key role in the whole network. Jaeger [17] stated that it is coordinated to research the reservoir layer and the support vector machine (SVM). Meanwhile, it is similar to optimize the reservoir layer and the kernel function of SVM. In the classical ESN, most of the network parameters and connections between neurons are randomly generated. However, randomly generated reservoir layer may not be optimal. Meanwhile, in the classical model as shown in Fig. 1 , the reservoir layer is composed of a large number of interconnected nodes in order to complete the mapping from low-dimensional input to high-dimensional state space. It is difficult to implement the complex random topology with hardware. The reservoir layer is supposed to be designed as a regular network to reduce the complexity of hardware implementation. Due to the difference in internal structure, the networks with same number of neurons show a great difference in performance. Some methods have been used to subvert this structure [47] – [48] [49] [50] , such as small-world networks and scale-free networks [51] . The results show that ESN with topology of low complexity can also obtain superior memory ability and high prediction accuracy.
+
+Several schemes have been proposed to change the topology of ESN, such as regular network structure and small world network structure. Small world network, which is proposed by Watts and Strogatz (WS) in 1998 [52] , is a new kind of network structure between regular network and random network, and also called WS small-world network. Combined with the advantages of regular network and random network, this network structure has not only a large clustering coefficient but also a smaller average path length. The network links are disrupted and reconnected with certain probability p . If p=0 , the reconnection will not happen, and finally only the original rule network will be obtained; if p=1 , all connections are reconnected, finally, a complete random network will be obtained as shown in Fig. 4 . Due to the random reconnection, WS small-world network sometimes destroys the connectivity of the whole network. It limits the transmission of information in the network to some extent. To overcome this shortcoming, NW proposed another slightly modified network structure in 1999, commonly known as the NW small-world network [53] . The structure also starts with a regular network, adopts the method of adding edges by randomization with a certain probability p , so as to transforms regular network into small world network as shown in Fig. 5 . This network structure can effectively avoid the generation of isolated nodes in the network.
+Fig. 4.
+
+WS small-world network.
+
+Show All
+Fig. 5.
+
+NW small-world network.
+
+Show All
+
+In small-world networks, there are many shortcuts which can make the feature length of the network smaller than the regular network, but also have a large clustering coefficient, which can reflect the clustering characteristics. These features are similar to human brain. In addition, the actual social, ecological and other networks are small world, such a network structure makes the information transmission faster, and changing several connections can dramatically change the performance of the network. The results show that the network performance is better than the regular network and random network because of the addition of some random shortcuts to the regular networks. Therefore, the small-world network topology is used to replace the internal topology of ESN. NW small-world network model is chosen since it can effectively avoid the generation of isolated nodes in the network. As shown in Fig. 6 , ESN is presented with the topology of NW small-world network.
+Fig. 6.
+
+ESN with NW small-world network.
+
+Show All
+
+B. Training Algorithm Based on Memristor
+1) Memristor:
+
+Memristor is a kind of passive two-terminal device. Besides resistance, capacitance, and inductance, it is the fourth basic component of electronic circuits. The concept of memristor was first developed by Prof. Chua [29] at UC Berkeley in 1971. Until 2008, the research team led by Williams of HP labs first produced memristor [30] .
+
+As is well known, four kinds of basic elements of the circuit include the voltage ( v ), current ( i ), charge ( q ), and magnetic flux ( \varphi ). Resistor ( R ) represents the differential relationship between voltage and current, capacitor ( C ) represents the differential relationship between charge and voltage, inductor ( L ) represents the differential relationship between magnetic flux and current. According to the theory of symmetry, Chua believes there should be a component that represents the differential relationship between the magnetic flux ( \varphi ) and charge ( q ) [30] .
+
+Prof. Chua put forward that memristor can be expressed by flux ( \varphi ) and charge ( q ) as \begin{equation} g\left ({\varphi,q}\right)=0. \end{equation}
+View Source \begin{equation} g\left ({\varphi,q}\right)=0. \end{equation}
+
+In particular, when the formula above is represented by a single valued function of the charge, there is \begin{equation} \varphi =f\left ({q}\right). \end{equation}
+View Source \begin{equation} \varphi =f\left ({q}\right). \end{equation}
+
+Take the derivative of the formula (12) on both sides \begin{equation} \frac {d\varphi \left ({t}\right)}{dt}=\frac {df\left ({q}\right)}{dq}\cdot \frac {dq}{dt}. \end{equation}
+View Source \begin{equation} \frac {d\varphi \left ({t}\right)}{dt}=\frac {df\left ({q}\right)}{dq}\cdot \frac {dq}{dt}. \end{equation}
+
+According to the existing physical formula \begin{equation} v\left ({t}\right)=\frac {d\varphi \left ({t}\right)}{dt}, i\left ({t}\right)=\frac {dq}{dt}. \end{equation}
+View Source \begin{equation} v\left ({t}\right)=\frac {d\varphi \left ({t}\right)}{dt}, i\left ({t}\right)=\frac {dq}{dt}. \end{equation}
+
+Substituting (14) and (12) into (13) , we have \begin{equation} v\left ({t}\right)=\frac {d\varphi \left ({q}\right)}{dq}\cdot i\left ({t}\right) \end{equation}
+View Source \begin{equation} v\left ({t}\right)=\frac {d\varphi \left ({q}\right)}{dq}\cdot i\left ({t}\right) \end{equation} where i(t) represents the current flowing through memristor. Formula (15) is the expression of the charge controlled memristor, where M(q)=(d\varphi (q)/dq) is called the value of memristor. On the other hand, when (11) is represented by a single valued function of magnetic flux, with the same argument, there will be \begin{equation} i\left ({t}\right)=\frac {dq\left ({\varphi }\right)}{d\varphi }\cdot v\left ({t}\right) \end{equation}
+View Source \begin{equation} i\left ({t}\right)=\frac {dq\left ({\varphi }\right)}{d\varphi }\cdot v\left ({t}\right) \end{equation} where v(t) represents the voltage flowing through memristor. Formula (16) is the expression of the magnetically controlled memristor, where W(\varphi)=(dq(\varphi)/d\varphi) is called memory conductance. Then the memristance can be expressed as M(q)=(1/W(\varphi)) .
+
+Since memristor has the same unit as the resistance (\Omega) , and has the characteristics of nonvolatile, which means that the resistance changes only in the case of current flow ( i=(dq/dt)\neq 0 ). When the power is cut off, the resistance can keep unchanged. So, Prof. Chua named this component as memristor, which means a combination of memory and resistance. In 2008, HP labs first produced a physical memristor based on the gate structure of TiO2 materials, as shown in Fig. 7 [30] . Memristor becomes a new hot spot in fields of storage, ANNs, and logic computing.
+Fig. 7.
+
+Microstructure of the physical memristor produced by HP labs.
+
+Show All
+
+2) Synapse Circuit Architecture and Operation:
+
+Based on the memristive synaptic circuit Soudry proposed [55] , as shown in Fig. 8 , neuromorphic computing circuits cost only 2% of the original network area and only 8% of the power consumption as the original network. In the synaptic circuit, input signal \bar {u}=u , \bar {u}=-u . The value of the control signal e is V_{\mathrm{ DD}} , 0 or -V_{\mathrm{ DD}} . Current I is the output signal. When e=0 , the two transistors are nonconduction. When e=V_{\mathrm{ DD}} , nMOS is conducting, pMOS is nonconduction, the resistance of memristor becomes large. When e=-V_{\mathrm{ DD}} , pMOS is conducting, nMOS is nonconduction, the value of memristor becomes small.
+Fig. 8.
+
+Schematic of the single synapse.
+
+Show All
+
+As shown in Fig. 9 , a single layer neural network is composed with synaptic circuits in which the memristor is used to store time coding and weight values. By using Ohm’s law, a multiplication operation can be completed, which greatly simplifies the hardware design and enhances the real-time reliability of the computing system. The network corresponds to a sample with M -dimensional input and N -dimensional output.
+Fig. 9.
+
+Architecture of synaptic grid (N\times M) circuit.
+
+Show All
+
+While in the computing phase, each computation phase is assumed to be T_{\mathrm{ rd}} , then we can convert the sample input x to voltage input u=ax , where a is a constant less than 1 to avoid the situation that the input voltage is larger than the threshold of memristor. Meanwhile, the value of the control signal e is \begin{equation} ~e_{n}\left ({t}\right)=\begin{cases} V_{\mathrm{ DD}},&{ 0\leq t\leq 0.5T_{\mathrm{ rd}} }\\ -V_{\mathrm{ DD}},&{0.5T_{\mathrm{ rd}}\leq t \leq T_{\mathrm{ rd}}}. \end{cases} \end{equation}
+View Source \begin{equation} ~e_{n}\left ({t}\right)=\begin{cases} V_{\mathrm{ DD}},&{ 0\leq t\leq 0.5T_{\mathrm{ rd}} }\\ -V_{\mathrm{ DD}},&{0.5T_{\mathrm{ rd}}\leq t \leq T_{\mathrm{ rd}}}. \end{cases} \end{equation}
+
+The difference of memristor is presented as follows: \begin{equation}s_{nm}= \int _{0}^{0.5T_{\mathrm{ rd}}} \left ({ax_{m}}\right)\,dt+ \int _{0.5T_{\mathrm{ rd}}}^{T_{\mathrm{ rd}}} \left ({-ax_{m}}\right)\,dt =0. \end{equation}
+View Source \begin{equation}s_{nm}= \int _{0}^{0.5T_{\mathrm{ rd}}} \left ({ax_{m}}\right)\,dt+ \int _{0.5T_{\mathrm{ rd}}}^{T_{\mathrm{ rd}}} \left ({-ax_{m}}\right)\,dt =0. \end{equation} This design makes the value of memristor remain unchanged. As other storage devices, memristor achieves writing without loss. The circuit reads the output current I_{nm} at time 0+. According to Ohm’s law and Kirchhoff’s law, the obtained result r_{n} can be expressed as follows: \begin{align} I_{nm}=&x_{m}*w_{nm} \\ r_{n}=&I_{n1}+I_{n2}+\dotsb +I_{nm}. \end{align}
+View Source \begin{align} I_{nm}=&x_{m}*w_{nm} \\ r_{n}=&I_{n1}+I_{n2}+\dotsb +I_{nm}. \end{align}
+
+Therefore, (8) mentioned is implemented as above. After sampling the result r_{n} , we can calculate the error y between the result r_{n} and the expected output d_{n} \begin{equation} r_{n}=d_{n}-y_{n}. \end{equation}
+View Source \begin{equation} r_{n}=d_{n}-y_{n}. \end{equation} Formula (9) is achieved with the LMS algorithm.
+
+In the process to update weights, weights updating time is T_{wr} , u and \bar {u} remain unchanged. Then control signal becomes \begin{equation} ~e_{n}\left ({t}\right)=\begin{cases} {\mathrm{ sign}}\left ({y_{n}}\right)V_{\mathrm{ DD}},&{ 0\leq t-T_{\mathrm{ rd}}\leq b\left |{ y_{n} }\right | }\\ 0,&{b\left |{ y_{n} }\right | \leq t \leq T_{wr} }. \end{cases} \end{equation}
+View Source \begin{equation} ~e_{n}\left ({t}\right)=\begin{cases} {\mathrm{ sign}}\left ({y_{n}}\right)V_{\mathrm{ DD}},&{ 0\leq t-T_{\mathrm{ rd}}\leq b\left |{ y_{n} }\right | }\\ 0,&{b\left |{ y_{n} }\right | \leq t \leq T_{wr} }. \end{cases} \end{equation}
+
+Therefore, the error is converted to the duration by the control signal e . b is a constant that transforms an error y_{n} into a unit of time, it makes the duration of the control signal less than the total updating time T_{wr} . Then, we can get the total change values of memristor as follows: \begin{align} s_{nm}=&\int _{T_{\mathrm{ rd}}}^{T_{\mathrm{ rd}}+b\left |{ y_{n} }\right |} \left ({a~{\mathrm{ sign}}\left ({y_{n}}\right)x_{m}}\right)\,dt=abx_{m} y_{n} \\ w\left ({i+1}\right)=&w\left ({i}\right)+ s_{nm}=w\left ({i}\right)+\eta yx^{T}. \end{align}
+View Source \begin{align} s_{nm}=&\int _{T_{\mathrm{ rd}}}^{T_{\mathrm{ rd}}+b\left |{ y_{n} }\right |} \left ({a~{\mathrm{ sign}}\left ({y_{n}}\right)x_{m}}\right)\,dt=abx_{m} y_{n} \\ w\left ({i+1}\right)=&w\left ({i}\right)+ s_{nm}=w\left ({i}\right)+\eta yx^{T}. \end{align} Thus, (10) is achieved with the LMS algorithm. During the whole process, the time-varying values of signal and resistance are shown in Fig. 10 .
+
+Fig. 10.
+
+Waveform illustration of each training iteration.
+
+Show All
+
+SECTION IV.
+Simulation and Result
+A. Application to Car Evaluation
+
+With the development of automobile industry and living standards, cars are no longer luxuries for most ordinary families. Due to the market firerce competition, criteria for evaluating products has gradually changed from the performance of products to customer satisfaction. Thus, car evaluation is critical. In the paper, the purchase index is based on the specific attributes of the car. The data set “Car Evaluation Database” comes from standard data sets in the machine learning database UCI, which has no missing data, and the values of each attribute are discrete and uniformly distributed.
+
+There are six attributes introduced to evaluate cars, such as purchase price (buying), maintenance costs (maint), number of gates (doors), number of seats (persons), luggage boot (trunk), and safety performance (safety). Their values are shown in Table I .
+TABLE I Values of Six Attributes to Evaluate Cars
+
+The results of vehicle evaluation are divided into four categories: 1) unacceptable (unacc); 2) acceptable (acc); 3) good; and 4) very good (vgood). Part of the training samples for car evaluation are shown in Table II .
+TABLE II Part of the training samples for car evaluation
+
+In order to simplify the simulation work, first, the training data are processed by the reservoir computing in MATLAB. The input signals of the reservoir layer are a group of 6-dimensional (6-D) vectors. Let the number of nodes in the reservoir layer be n and sample size be s . After the reservoir computing, 6-D vectors are mapped to n -dimensional vectors, an n*s matrix will be obtained. The matrix is then used as inputs of the circuit based on memristor to train the weights. The LMS circuit is established in Simulink as shown in Fig. 11 .
+Fig. 11.
+
+Simulation model built in Simulink.
+
+Show All
+
+As car evaluation is divided into four categories, the synaptic grid circuit model should be the size of n*4 as shown in Fig. 12 . The output value of the circuit is processed with the principle of winner-takes-all. From car evaluation dataset, 200 samples are randomly selected as training samples and 100 samples are taken as test samples. The mean square value and the prediction accuracy are calculated in the end.
+Fig. 12.
+
+2\times 2 synaptic grid circuit built in Simulink.
+
+Show All
+
+Most parameters in the classical reservoir layer network are randomly generated. However, it is widely acknowledged that the best solution is to design a network related to the specific application. Among these parameters, the number of nodes in reservoir layer and the connection degree are significant in the performance of ESN network.
+
+In practice, the simulation using Simulink is not same as the real circuit with the characteristics of parallel computing for the existence of the algebraic loop of Simulink, thus it usually takes several hours to finish the circuit simulation each time. In order to analyze the proposed scheme, the simulation of ESN with online LMS was tested with MATLAB at first to find the best reservoir sizes and connectivity. In the course of testing, the number of nodes in the reservoir layer ranges from 10 to 100, the degrees of connectivity range from 0.01 to 1. The accuracy of each simulation is shown in Fig. 13 . According to the simulation results, it shows that the optimal number of nodes in the reservoir layer is about 15 nodes. Therefore, the bigger of the number of nodes does not mean the better performance. Instead, an appropriate number of nodes is needed. The optimal connection degree is about 0.1, which also varies for different cases.
+Fig. 13.
+
+Testing accuracy of each simulation.
+
+Show All
+
+At the same time, in order to verify the convergence of the algorithm, the value of the weight is recorded with the number of iterations. If the scheme is convergent, the training error decreases with the number of iterations. According to (10) , the change of the weight is close to 0 as well. Five weights were randomly selected, after about 1000 iterations. The weight converges in the vicinity of −0.5, −0.2, and 0.4 as shown in Fig. 14 . From simulation results, we can conclude that the proposed scheme is convergent.
+Fig. 14.
+
+Value of five weights.
+
+Show All
+
+The optimal number of nodes and connection degree in reserve pool are used in the process of circuit simulation. Compared with the software implementation, the fabricating technology of memristive circuits is not mature. Thus, the hardware implementation process is prone to interference of noise. Therefore, the proposed scheme is supposed to be robust with 10% noise in the circuit simulation. As shown in Fig. 15 , the final training errors of different simulations are basically similar, which indicates that the circuit design can precisely implement ESN with online LMS. On the other hand, it is shown that the noise effect is relatively small for the system performance. Thus, the robustness of the proposed scheme is confirmed due to the robustness of gradient descent in the LMS algorithm.
+Fig. 15.
+
+Test errors of the proposed circuit, the circuit with noise and the algorithm.
+
+Show All
+
+B. Application to Short-Term Power Load Forecasting
+
+The load forecasting of power system has become one of the hotspots in power systems [56] . Historical power load data is a typical time series. The ESN network is very suitable for fitting the time series with noise, strong randomness and nonstationary. Jaeger applied ESN to Mackey–Glass time series with great performances. Therefore, the proposed MESN is applied to the short-term power load forecasting. The historical power load data comes from a global online forecast competition held in August 1, 2001 by EUNITE Network. The organizers exposed every 30 min load data in 1997 and 1998 in eastern Slovakia, as well as daily temperature, holiday type, and other data. In this paper, the historical power load data of 1997 is used as the training set, and the historical power load data of 1998 is used as the test set. Some historical power load data are displayed as shown in Fig. 16 . Meanwhile, for MESN, comparison is made between the BP algorithm and LMS algorithm. The test results are shown in Table III .
+TABLE III Test Results of Short-Term Power Load Forecasting
+Fig. 16.
+
+Historical power load data of a week.
+
+Show All
+
+According to the test results, when using the LMS or BP algorithm to train the output weight matrix, we need not to use thousands of reservoir nodes as in the classical ESN network. A desired result can be obtained with only ten reservoir nodes. In addition, though the precision of ESN-BP may be higher, but there are more weights we need train. ESN-BP requires more memristor synaptic circuits with more areas and powers, as well as greatly increased training times. Moreover, the accuracy of ESN-LMS is not much lower than that of the ESN-BP network. Thus, the overall performance of ESN-LMS is better than that of ESN-BP in memristive hardware designs.
+
+After more detailed debugging, the number of the pool layer nodes was selected as 8, the number of samples used to initialize the reservoir pool layer was 500. The weight distribution is shown for the output matrix after training in Fig. 17 . The obtained MSE is 5.7\times 10^{-3} for the memristive circuit simulation. The partial prediction results are shown in Fig. 18 , which demonstrates that the proposed scheme completes the prediction task well.
+Fig. 17.
+
+Output weights W_{\mathrm{ out}} .
+
+Show All
+Fig. 18.
+
+Comparison between predicted value and target value.
+
+Show All
+
+SECTION V.
+Conclusion
+
+This paper proposed a computational architecture of MESN with online LMS algorithm. The topological structure adopted NW small-world network. The training process was implemented by the memristive synaptic circuit. In the proposed MESN network, the state matrix of the reservoir layer, which is obtained by raising the dimension of input data, was utilized as an input of the LMS algorithm to train the output weight matrix on chip. After certain iterations, the resistance value of memristor was adjusted to a constant. Thus, the final weight output matrix was obtained. The proposed scheme successfully performed car evaluation and short-term power load forecasting. We also studied the effect of node number and connectivity degree in reservoir. The research provided a new idea for the hardware implementation of neural networks. Future work will focus on improving the accuracy of the model and the hardware implementation of the memristive reservoir layer to achieve a fully analog MESN network.
+
+Authors
+Figures
+References
+Citations
+Keywords
+Metrics
+More Like This
+Multi-band decomposition of the linear prediction error applied to the least-mean-square method with fixed and variable step-sizes
+
+1997 IEEE International Symposium on Circuits and Systems (ISCAS)
+
+Published: 1997
+Least Mean Square Method for LVDT Signal Processing
+
+IEEE Transactions on Instrumentation and Measurement
+
+Published: 2007
+Show More
+References
+References is not available for this document.
+IEEE Personal Account
+
+    Change username/password 
+
+Purchase Details
+
+    Payment Options
+    View Purchased Documents 
+
+Profile Information
+
+    Communications Preferences
+    Profession and Education
+    Technical interests 
+
+Need Help?
+
+    US & Canada: +1 800 678 4333
+    Worldwide: +1 732 981 0060
+    Contact & Support 
+
+Follow
+
+About IEEE Xplore | Contact Us | Help | Accessibility | Terms of Use | Nondiscrimination Policy | IEEE Ethics Reporting | Sitemap | Privacy & Opting Out of Cookies
+
+A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.
+
+© Copyright 2021 IEEE - All rights reserved. Use of this web site signifies your agreement to the terms and conditions.
