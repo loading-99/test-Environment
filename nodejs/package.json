@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "view": "echo $npm_package_config_repository_type",
+    "cross": "NODE_ENV=development node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "port": "8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "xxx"
+  },
+  "dependencies": {
+    "cross": "^1.0.0"
+  }
+}
