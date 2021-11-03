@@ -13,6 +13,7 @@
     "@babel/preset-env": "^7.15.6",
     "DOM": "0.0.3",
     "babel-loader": "^8.2.2",
+    "core-js": "^3.19.0",
     "corejs": "^1.0.0",
     "css-loader": "^6.3.0",
     "eslint": "^7.32.0",
